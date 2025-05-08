@@ -12,7 +12,7 @@ This project synchronizes SysAid support tickets (Service Requests) into Azure D
 
 ## 📁 Project Structure
 
-'''
+```
 sysaid_to_ado/
 ├── ado_api.py                 # ADO bug creation, update, and linking
 ├── main.py                    # Orchestrator: fetch, redact, sync
@@ -23,7 +23,7 @@ sysaid_to_ado/
 ├── last_sync.json             # Delta sync timestamp
 ├── logs/
 │   └── sync.log               # Audit trail
-'''
+```
 
 ---
 
@@ -59,14 +59,14 @@ sysaid_to_ado/
 
 ### 1. Install Requirements
 
-'''bash
+```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
-'''
+```
 
 ### 2. Create '.env'
 
-'''dotenv
+```dotenv
 # Azure DevOps
 ADO_ORG=your-ado-org
 ADO_PROJECT=your-ado-project
@@ -76,22 +76,22 @@ ADO_API_VERSION=7.0
 # SysAid
 SYSAID_API_TOKEN=your-sysaid-token
 SYSAID_BASE_URL=https://yourcompany.sysaidit.com
-'''
+```
 
 > 🔒 Keep this file out of version control.
 
 ### 3. Run the Sync
 
-'''bash
+```bash
 python main.py
-'''
+```
 
 You’ll get a summary like:
 
-'''
+```
 Sync complete.
 Created: 3, Updated: 2, Failed: 0
-'''
+```
 
 ---
 
@@ -99,7 +99,7 @@ Created: 3, Updated: 2, Failed: 0
 
 Example of a SysAid ticket passed to ADO:
 
-'''python
+```python
 {
   "id": 101,
   "title": "Email Service - login failure",
@@ -109,7 +109,7 @@ Example of a SysAid ticket passed to ADO:
   "parent_id": 872,  # Optional ADO User Story ID
   "update_time": 1714458000000  # Epoch ms
 }
-'''
+```
 
 ---
 

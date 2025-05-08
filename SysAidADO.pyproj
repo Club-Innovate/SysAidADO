@@ -30,8 +30,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ado_sync.log" />
+    <Content Include="LICENSE.txt" />
     <Content Include="logs\sync.log" />
-    <Content Include="MIT License.txt" />
     <Content Include="README.md" />
     <Content Include="sysaid_sync.log" />
   </ItemGroup>
