@@ -73,8 +73,7 @@ def fetch_sysaid_tickets(count=11):
 # Core Code Functions
 #
 # Note: This section is for the production version of SysAid API integration.
-# I do not have a license to SysAid, so I cannot test the API calls after making
-# edits to the code. SysAid API details gathered from here: 
+# You will need a SysAid license. SysAid API details gathered from here: 
 # https://documentation.sysaid.com/docs/rest-api-guide
 #
 # UPATE THIS SECTION WHEN YOU HAVE A LICENSE TO SYSAID
