@@ -156,3 +156,11 @@ You're welcome to extend this to:
 
 Maintained by: **Hans Esquivel**
 License: MIT (or internal)
+
+---
+
+## Contact
+
+Please open an [issue](https://github.com/club-innovate/sysaidado/issues) or start a [discussion](https://github.com/club-innovate/sysaidado/discussions) if you want to get in touch.
+
+---
