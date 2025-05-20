@@ -89,3 +89,4 @@ sysaid_sync.log
 
 # SysAidADO-specific: Exclude sensitive config
 config.py
+/config.py
