@@ -1,4 +1,4 @@
-# 🧩 SysAid to Azure DevOps Bug Sync
+# SysAid to Azure DevOps Bug Sync
 
 This project synchronizes SysAid support tickets (Service Requests) into Azure DevOps (ADO) as **Bugs**, complete with:
 
@@ -10,7 +10,7 @@ This project synchronizes SysAid support tickets (Service Requests) into Azure D
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 sysaid_to_ado/
@@ -27,7 +27,7 @@ sysaid_to_ado/
 
 ---
 
-## 🔐 Security & HIPAA Compliance
+## Security & HIPAA Compliance
 
 - Redacts fields using regex and SpaCy NER before syncing to ADO
 - Logs each detection/redaction to 'logs/sync.log'
@@ -40,7 +40,7 @@ sysaid_to_ado/
 
 ---
 
-## 🔄 Sync Logic
+## Sync Logic
 
 ### On each run:
 1. Fetch **new or updated** SysAid tickets since last run
@@ -55,7 +55,7 @@ sysaid_to_ado/
 
 ---
 
-## 🔧 Setup Instructions
+## Setup Instructions
 
 ### 1. Install Requirements
 
@@ -78,7 +78,7 @@ SYSAID_API_TOKEN=your-sysaid-token
 SYSAID_BASE_URL=https://yourcompany.sysaidit.com
 ```
 
-> 🔒 Keep this file out of version control.
+> Keep this file out of version control.
 
 ### 3. Run the Sync
 
@@ -95,7 +95,7 @@ Created: 3, Updated: 2, Failed: 0
 
 ---
 
-## 🧪 Sample Ticket Input
+## Sample Ticket Input
 
 Example of a SysAid ticket passed to ADO:
 
@@ -113,7 +113,7 @@ Example of a SysAid ticket passed to ADO:
 
 ---
 
-## 📎 Parent Linking (Optional)
+## Parent Linking (Optional)
 
 If 'ticket["parent_id"]' is provided:
 - Bug will be linked to that work item
@@ -122,7 +122,7 @@ If 'ticket["parent_id"]' is provided:
 
 ---
 
-## 📜 Logs and Auditing
+## Logs and Auditing
 
 - 'logs/sync.log' contains full run trace
 - Every detection, failure, and update is logged
@@ -130,18 +130,18 @@ If 'ticket["parent_id"]' is provided:
 
 ---
 
-## 🛡 Best Practices Followed
+## Best Practices Followed
 
-- ✅ Secrets kept in '.env' or config.py
-- ✅ Redaction applied before API submission
-- ✅ Updates only occur when needed
-- ✅ JSON Patch structure for ADO
-- ✅ Graceful exception handling
-- ✅ Configurable log file via 'utils.setup_logger()'
+- Secrets kept in '.env' or config.py
+- Redaction applied before API submission
+- Updates only occur when needed
+- JSON Patch structure for ADO
+- Graceful exception handling
+- Configurable log file via 'utils.setup_logger()'
 
 ---
 
-## 🤝 Contributions
+## Contributions
 
 You're welcome to extend this to:
 
@@ -152,7 +152,7 @@ You're welcome to extend this to:
 
 ---
 
-## 📅 Created April 2025
+## Created April 2025
 
 Maintained by: **Hans Esquivel**
 License: MIT (or internal)
